@@ -7,4 +7,22 @@
   <packaging>pom</packaging>
 
   <description>Test verify end with newline</description>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>com.github.ekryd.sortpom</groupId>
+        <artifactId>sortpom-maven-plugin</artifactId>
+        <version>4.0.0</version>
+
+        <configuration>
+          <verifyFail>stop</verifyFail>
+          <verifyFailOn>strict</verifyFailOn>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
 </project><!-- Not new line! -->
